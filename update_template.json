@@ -4,7 +4,7 @@
     {
       "Action": "UPSERT",
       "ResourceRecordSet": {
-        "Name": "pi.silentbystander.com",
+        "Name": "FILL_IN_WITH_DOMAIN_YOU_WISH_TO_BE_DYNAMIC",
         "Type": "A",
         "TTL": 300,
         "ResourceRecords": [
