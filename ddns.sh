@@ -6,6 +6,11 @@ HOSTED_ZONE_ID="FILL_IN_WITH_HOSTED_ZONE_ID"
 
 CURRENT_RECORD=$(dig +short $MY_DOMAIN)
 
+if [ -z "$CURRENT_RECORD" ]; then
+    echo "First run"
+    CURRENT_RECORD="filler"
+fi
+
 CURRENT_IP=$(curl checkip.amazonaws.com)
 
 if [ "$CURRENT_RECORD" != "$CURRENT_IP" ];
